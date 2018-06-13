@@ -1,0 +1,42 @@
+<templateSet group="NetKernelXML">
+  <template name="nkimportlayer1" value="&lt;import&gt;&#10;  &lt;private/&gt;&#10;  &lt;uri&gt;urn:org:netkernel:ext:layer1&lt;/uri&gt;&#10;&lt;/import&gt;" description="Space import for the urn:org:netkernel:ext:layer1 library" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="nkimportgroovy" value="&lt;import&gt;&#10;&lt;uri&gt;urn:org:netkernel:lang:groovy&lt;/uri&gt;&#10;&lt;private/&gt;&#10;&lt;/import&gt;&#10;" description="Space import for lang:groovy runtime" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="nkimporthds" value="&lt;import&gt;&#10;&lt;private /&gt;&#10;&lt;uri&gt;urn:org:netkernel:mod:hds&lt;/uri&gt;&#10;&lt;/import&gt;" description="Space import for the urn:org:netkernel:mod:hds HDS rootspace (private)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="nkimportxml" value="&lt;import&gt;&#10;&lt;private /&gt;&#10;&lt;uri&gt;urn:org:netkernel:xml:core&lt;/uri&gt;&#10;&lt;/import&gt;&#10;" description="Space import for the urn:org:netkernel:xml:core library" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="nkmapper" value="&lt;mapper&gt;&#10;&lt;config&gt;&#10;&lt;endpoint&gt;&#10;&lt;name&gt;Mapper Endpoint&lt;/name&gt;&#10;&lt;description&gt;Example mapper overlay endpoint&lt;/description&gt;&#10;&lt;verbs&gt;SOURCE&lt;/verbs&gt;&#10;&lt;grammar&gt;&#10;&lt;active&gt;&#10;&lt;identifier&gt;active:foo&lt;/identifier&gt;&#10;&lt;argument name=&quot;bar&quot; min=&quot;1&quot; max=&quot;1&quot; desc=&quot;an argument&quot; /&gt;&#10;&lt;/active&gt;&#10;&lt;/grammar&gt;&#10;&lt;request&gt;&#10;&lt;identifier&gt;res:/dummy&lt;/identifier&gt;&#10;&lt;/request&gt;&#10;&lt;/endpoint&gt;&#10;&lt;/config&gt;&#10;&lt;space&gt;&#10;&lt;literal type=&quot;string&quot; uri=&quot;res:/dummy&quot;&gt;Example wrapped endpoint&lt;/literal&gt;&#10;&lt;/space&gt;&#10;&lt;/mapper&gt;" description="Mapper overlay with example endpoint" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="nkaccessor" value="&lt;accessor&gt;&#10;&lt;description /&gt;&#10;&lt;grammar&gt;&#10;&lt;active&gt;&#10;&lt;identifier&gt;active:foo&lt;/identifier&gt;&#10;&lt;argument name=&quot;bar&quot; min=&quot;1&quot; max=&quot;1&quot; desc=&quot;Bar argument&quot;/&gt;&#10;&lt;/active&gt;&#10;&lt;/grammar&gt;&#10;&lt;class&gt;com.example.FooAccessor&lt;/class&gt;&#10;&lt;/accessor&gt;&#10;" description="Accessor endpoint declaration with active grammar" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="nkmodule" value="&lt;module version=&quot;2.0&quot;&gt;&#10;&lt;meta&gt;&#10;&lt;identity&gt;&#10;&lt;uri&gt;urn:example&lt;/uri&gt;&#10;&lt;version&gt;1.0.0&lt;/version&gt;&#10;&lt;/identity&gt;&#10;&lt;info&gt;&#10;&lt;name&gt;Example Module&lt;/name&gt;&#10;&lt;description&gt;Example Module&lt;/description&gt;&#10;&lt;/info&gt;&#10;&lt;/meta&gt;&#10;&#10;&lt;system&gt;&#10;&lt;dynamic/&gt;&#10;&lt;/system&gt;&#10;&#10;&lt;rootspace&#10;name=&quot;example space&quot;&#10;public=&quot;true&quot;&#10;uri=&quot;urn:example:main&quot;&gt;&#10;&#10;&lt;/rootspace&gt;&#10;&#10;&#10;&lt;/module&gt;" description="Initial NetKernel module.xml with one empty rootspace declaration" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="nkmetatodo" value="&lt;meta&gt;&#10;&lt;todo progress=&quot;${cursor}50&quot; owner=&quot;me&quot;&gt;&#10;==Install the ToDo Tool==&#10;*'''Finish the todo tool!'''&#10;*Go and try it [http://localhost:1060/tools/meta/todo|here]&#10;&lt;/todo&gt;&#10;&lt;/meta&gt;" description="Metadata template for the NK TODO application (install meta-todo from Apposite)" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+</templateSet>
