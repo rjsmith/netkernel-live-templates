@@ -1,0 +1,7 @@
+<templateSet group="NetKernel Java">
+  <template name="nkimportlayer1" value="&lt;import&gt;&#10;  &lt;private/&gt;&#10;  &lt;uri&gt;urn:org:netkernel:ext:layer1&lt;/uri&gt;&#10;&lt;/import&gt;" description="Space import for the urn:org:netkernel:ext:layer1 library" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+</templateSet>
