@@ -1,0 +1,13 @@
+<templateSet group="NetKernelJava">
+  <template name="nkdts" value="declareThreadSafe();" description="Marks the endpoint to be considered safe to execute concurrently" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="nkloginfo" value="$CONTEXTVAR$.logRaw(INKFLocale.LEVEL_INFO, $END$);" description="Adds a logRaw LEVEL_INFO statement, wrapping current selection (if any) as the logged string expression" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="CONTEXTVAR" expression="" defaultValue="aContext" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
