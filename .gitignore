@@ -1,3 +1,7 @@
-# Sublime Editor
-*.sublime-project
-*.sublime-workspace
+# Ignore every file except for this one and the actual templates
+*
+!.gitignore
+!NetKernel*.xml
+!README.md
+!LICENSE
+!listCurrentTemplates.sh
